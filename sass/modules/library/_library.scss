@@ -1,0 +1,10 @@
+.m-library {
+	padding: 90px 0 45px;
+	@include respond-to("medium"){
+		padding: 127px 0 63.5px 0;
+	}
+}
+
+.m-library__list {
+	margin-bottom:30px;
+}

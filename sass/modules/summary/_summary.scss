@@ -1,0 +1,133 @@
+.m-resumen {
+	padding:90px 0 45px;
+	background: $white;
+	@include respond-to("medium") {
+		padding: 127px 0 63.5px 0;
+	}
+}
+
+.m-resumen__page,
+.m-resumen__proyecto,
+.m-resumen__costos,
+.m-resumen__datos,
+.m-resumen__graficas {
+	background: $white;
+	outline-style: none !important;
+	outline-color:red;
+	border: 0px solid $white !important;
+	margin-bottom: 50px;
+}
+
+.m-resumen__page {
+	h2{
+		margin-bottom:0;
+
+	}
+	h3 {
+		margin: 0;
+	}
+}
+
+.m-resumen__title-infraestructura {
+	color: $gray-strong;
+	margin: 0px 5px;
+}
+
+.m-resumen__title-estado,
+.m-resumen__title-municipio {
+	display: inline-block;
+	margin: 0px 5px;
+}
+.m-resumen__costos-table {
+	table{
+		margin: 10px 0;
+		width: 100%;
+		background: #FAFAFA;
+		tbody{
+			tr{
+				height: 50px;
+				td{
+					color: $gray-light;
+					padding: 10px;
+				}
+				td:nth-child(1){
+					width: 50%;
+					//border-right: 1px solid #c9c9c9;
+				}
+				td:nth-child(2){
+					width: 50%;
+				}
+			}
+			tr:last-child{
+				border-bottom: none;
+			}
+			tr:nth-child(odd) {
+				background: #e9e9e9;
+			}
+		}
+	}
+}
+
+.m-resumen__graficas {
+	background: $white;
+}
+
+.m-resumen__graficas-egresos,
+.m-resumen__graficas-ingresos {
+	font-size:11px;
+	height: 500px;
+	width:100%;
+}
+
+.m-resumen__costos__concepto-total,
+.m-resumen__costos__costo-total {
+	font-weight: 700;
+}
+
+.m-resumen__costos__concepto,
+.m-resumen__costos__concepto-total {
+	text-align:right;
+}
+
+.m-resumen__costos__concepto {
+	font-weight: 600;
+}
+.m-resumen__datos-table {
+	table{
+		margin: 10px 0;
+		width: 100%;
+		background: #FAFAFA;
+		tbody{
+			tr{
+				height: 50px;
+				td {
+					color: $gray-light;
+					padding: 10px;
+					&:nth-child(1){
+						width: 70%;
+					}
+					&:nth-child(2){
+						width: 30%;
+					}
+				}
+				&:last-child{
+					border-bottom: none;
+				}
+				&:nth-child(odd) {
+					background: #e9e9e9;
+				}
+			}
+		}
+	}
+}
+
+
+
+.m-resumen__datos-pregunta,
+.m-resumen__datos-respuesta {
+	color: $gray-strong;
+}
+
+.m-resumen__datos-pregunta {
+	text-align: right;
+}

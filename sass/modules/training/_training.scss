@@ -1,0 +1,112 @@
+.m-training {
+	padding:90px 0 45px;
+	@include respond-to("medium") {
+		padding: 127px 0 63.5px 0;
+	}
+}
+.m-training-content {
+	margin: 50px 0;
+}
+.m-training-content__modality {
+	opacity:0;
+	display:none;
+}
+
+.m-training-tab-item {
+	cursor:pointer;
+}
+
+.m-training-content__video {
+	padding: 0px 0px;
+	video{
+		width: 100%;
+		@include box-shadow(1px 4px 18px rgba(0,0,0,0.125));
+		margin: 15px 0px;
+	}
+	@include respond-to("small"){
+		padding: 0px 15px;
+	}
+}
+
+.m-training-content__description {
+	padding: 0 15px;
+}
+
+.m-training-content__support {
+	margin: 15px 0;
+}
+
+.m-training-content__support-button {
+	margin: 10px auto;
+	width: 180px;
+	@include respond-to("small"){
+		margin: 20px auto;
+	}
+}
+
+.m-training-content__support-link {
+	display:inline-block;
+	padding: 10px 20px;
+	@include transition(all ease-in-out 0.25s);
+	img {
+		display:inline-block;
+		padding: 0px 5px;
+		vertical-align: middle;
+	}
+	&:hover {
+		color: $gray-strong;
+	}
+}
+
+
+.m-training-content__test {
+	padding: 15px 0;
+	border-top: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+}
+
+.m-emus-guide {
+	padding: 60px 0 30px;
+}
+
+.m-emus-tools {
+	padding: 0 15px;
+	img {
+		width: 96px;
+	}
+}
+.shake-to-view {
+	@include animation(shake 0.82s cubic-bezier(.36,.07,.19,.97) both);
+	@include transform(translate3d(0, 0, 0));
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    @include transform(translate3d(-1px, 0, 0));
+  }
+ 
+  20%, 80% {
+    @include transform(translate3d(3px, 0, 0));
+  }
+  30%, 50%, 70% {
+    @include transform(translate3d(-6px, 0, 0));
+  }
+  40%, 60% {
+    @include transform(translate3d(6px, 0, 0));
+  }
+}
+.m-emus__body-image--in-training {
+	@include opacity(0.25);
+	&.is-modality-active {
+		@include opacity(1);
+	}
+	@include respond-to("medium"){
+		@include opacity(0.25);
+		@include transition(opacity 0.25s linear);
+		&:hover,
+		&.is-modality-active {
+			@include opacity(1);
+		}
+	}
+}

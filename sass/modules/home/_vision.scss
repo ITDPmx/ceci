@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/**
+ *	Section Vision
+ */
+ 
+.m-vision {
+	padding:45px 0 45px;
+	display: table;
+	width: 100%;
+}
+
+.m-vision__body{
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.m-vision__body-container {
+	padding: 20px 0;
+	min-height: 200px;
+	@include respond-to("small"){
+		min-height: 200px;
+	}
+	@include respond-to("medium"){
+		min-height: 150px;
+	}
+}
+
+.m-vision__visual {
+	margin-bottom: 20px;
+	text-align:center;
+	@include respond-to("medium"){
+		margin-bottom: 0px;
+		text-align:left;
+	}
+}
+
+.m-vision__icon {
+	padding-top:7px;
+	width: 150px;
+	@include respond-to("medium"){
+		width: 120px;
+	}
+}
+
+.m-vision__title,
+.m-vision__hash {
+	margin-bottom:0px;
+	margin-top:0;
+}
+
+.m-vision__title {
+	font-size: 18px;
+	@include respond-to("medium"){
+		font-size: 16px;
+	}
+}
+
+.m-vision__hash {
+	font-size: 16px;
+	@include respond-to("medium"){
+		font-size: 14px;
+	}
+}

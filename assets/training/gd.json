@@ -1,0 +1,19 @@
+{
+	"id_modality": 4,
+	"modality": "Gestión de la Movilidad",
+	"description": "Acciones encaminadas a la reducción del uso del automóvil a través de la gestión adecuada de los viajes individuales y que hacen atractivos otros medios de transporte con menores costos para la sociedad.",
+	"video_foreground": "/assets/images/training/intro_gm.png",
+	"video": {
+		"mp4": "/assets/videos/gm.mp4",
+		"webm": "/assets/videos/gm.webm",
+		"ogv": "/assets/videos/gm.ogv"
+	},
+	"id_video": 4,
+	"guide": "/assets/downloads/Guia-Gestion-de-la-Movilidad.pdf",
+	"id_guide": 4,
+	"finance": "/financiamiento",
+	"id_finance": 4,
+	"url_test": "/cuestionario/4",
+	"id_test": 4,
+	"class": "color-purple"
+}

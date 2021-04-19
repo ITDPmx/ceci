@@ -1,0 +1,19 @@
+[
+{"id": 0, "text": "Sin municipio"},
+	{"id": 1, "text": "Álvaro Obregón"},
+	{"id": 2, "text": "Azcapotzalco"},
+	{"id": 3, "text": "Benito Juárez"},
+	{"id": 4, "text": "Cuajimalpa"},
+	{"id": 5, "text": "Coyoacan"},
+	{"id": 6, "text": "Cuauhtémoc"},
+	{"id": 7, "text": "Gustavo A. Madero"},
+	{"id": 8, "text": "Iztacalco"},
+	{"id": 9, "text": "Iztapalapa"},
+	{"id": 10, "text": "Magdalena Contreras"},
+	{"id": 11, "text": "Miguel Hidalgo"},
+	{"id": 12, "text": "Milpa Alta"},
+	{"id": 13, "text": "Tláhuac"},
+	{"id": 14, "text": "Tlalpan"},
+	{"id": 15, "text": "Venustiano Carranza"},
+	{"id": 16, "text": "Xochimilco"}
+]

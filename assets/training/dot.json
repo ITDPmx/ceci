@@ -1,0 +1,19 @@
+{
+	"id_modality": 3,
+	"modality": "Desarrollo Orientado al Transporte",
+	"description": "Estrategias para generar el desarrollo de barrios urbanos compactos, densos y mixtos en torno al transporte público y con espacios públicos que incentiven la movilidad a pie y en bicicleta.",
+	"video_foreground": "/assets/images/training/intro_dot.png",
+	"video": {
+		"mp4": "/assets/videos/dot.mp4",
+		"webm": "/assets/videos/dot.webm",
+		"ogv": "/assets/videos/dot.ogv"
+	},
+	"id_video": 3,
+	"guide": "/assets/downloads/Guia-Desarrollo-Orientado-al-Trasporte.pdf",
+	"id_guide": 3,
+	"finance": "/financiamiento",
+	"id_finance": 3,
+	"url_test": "/cuestionario/3",
+	"id_test": 3,
+	"class": "color-green"
+}

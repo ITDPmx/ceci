@@ -1,0 +1,11 @@
+adapter: ftp
+host: transeunte.org
+port: 21
+username: ceci@transeunte.org
+password: 94aZP7N24yXV3jkB
+path: /
+passive: true
+
+exclude:
+    - .gitignore
+    - dandelion.yml

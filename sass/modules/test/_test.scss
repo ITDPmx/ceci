@@ -1,0 +1,166 @@
+.m-cuestionario {
+	padding:120px 0 45px;
+	@include respond-to("medium") {
+		padding: 127px 0 63.5px 0;
+	}
+}
+
+.m-cuestionario-timer {
+	color: $purple3;
+	display: block;
+	text-align: right;
+}
+
+.m-cuestionario__body {
+  margin: 0 auto;
+  border-top: none;
+  background: #fff;
+  padding: 20px;
+  font-family: Trebuchet, Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  color: #353535;
+  margin:20px;
+  line-height: 1.5em;
+  @include box-shadow(0px 1px 31px 2px rgba(0,0,0,0.125));
+}
+
+/* BASE QUIZ STYLES */
+/* These styles ensure that the necessary elements are hidden for toggling */
+
+/* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
+
+.startQuiz,
+.nextQuestion,
+.backToQuestion,
+.questions li.question,
+.questions li.question .responses,
+.questions li.question .responses .correct,
+.questions li.question .responses .incorrect,
+.quizResults {
+    display: none;
+}
+
+/* If response messages are disabled or only shown on quiz completion,
+   nextQuestion button IS checkAnswer button - so it must be displayed */
+.nextQuestion.checkAnswer {
+    display: block;
+    margin: 10px 0px;
+    @include respond-to('small'){
+    	display: inline-block;
+    }
+}
+
+ol.questions,
+ul.answers,
+ul.responses,
+ol.questions li,
+ul.answers li,
+ul.responses li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+/* Accessibility */
+// .quizName span:first-child {
+//     border: 0;
+//     clip: rect(0 0 0 0);
+//     height: 1px;
+//     margin: -1px;
+//     overflow: hidden;
+//     padding: 0;
+//     position: absolute;
+//     width: 1px;
+// }
+.startQuiz {
+    margin-top: 40px;
+}
+
+.tryAgain {
+    float: none;
+    margin: 20px 0;
+}
+
+// clearfix
+// .quizArea, .quizResults {
+//     zoom: 1;
+// }
+// .quizArea:before, .quizArea:after, .quizResults:before, .quizResults:after {
+//     content: "\0020";
+//     display: block;
+//     height: 0;
+//     visibility: hidden;
+//     font-size: 0;
+// }
+.quizArea:after, .quizResults:after {
+    clear: both;
+}
+
+.questionCount {
+    color: $gray-light;
+}
+.questionCount span {
+    font-weight: bold;
+}
+
+ol.questions {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left:0px;
+    @include respond-to('medium') {
+    	padding-left:20px;
+    }
+}
+ol.questions li {
+    margin-left: 0;
+}
+
+ul.answers {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left:0px;
+    @include respond-to('small') {
+    	padding-left:initial;
+    }
+}
+
+ul.responses li {
+    margin: 10px 20px 20px;
+}
+ul.responses li p span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+.complete ul.answers li.correct, ul.responses li.correct p span {
+    color: #6C9F2E;
+}
+ul.responses li.incorrect p span {
+    color: #B5121B;
+}
+
+.quizName {
+	color: $purple2;
+	line-height: 1.2em;
+}
+
+.quizDescription {
+  color: $gray-strong;
+  margin: 30px 0px;
+}
+
+.quizResults h3 {
+  color: $purple1;
+}
+.quizResults h3 span {
+  font-weight: normal;
+  font-style: italic;
+}
+.quizResultsCopy {
+  clear: both;
+  margin-top: 20px;
+}
+
+#quizScoreX-less {
+  color: #2f6b91;
+  display: block;
+}

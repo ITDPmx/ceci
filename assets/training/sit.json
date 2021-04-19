@@ -1,0 +1,19 @@
+{
+	"id_modality": 2,
+	"modality": "Sistemas Integrados de Transporte",
+	"description": "Sistema de transporte público con servicio confiable, eficaz y con amplia cobertura que incentiva viajes en medios sustentables. Integrado con otros medios de transporte para generar intermodalidad.",
+	"video_foreground": "/assets/images/training/intro_sit.png",
+	"video": {
+		"mp4": "/assets/videos/sit.mp4",
+		"webm": "/assets/videos/sit.webm",
+		"ogv": "/assets/videos/sit.ogv"
+	},
+	"id_video": 2,
+	"guide": "/assets/downloads/Guia-Sistemas-Integrados-de-Transportes.pdf",
+	"id_guide": 2,
+	"finance": "/financiamiento",
+	"id_finance": 2,
+	"url_test": "/cuestionario/2",
+	"id_test": 2,
+	"class": "color-pink"
+}

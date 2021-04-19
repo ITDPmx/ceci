@@ -1,0 +1,20 @@
+{
+	"id_modality": 1,
+	"modality": "Calles Completas",
+	"description": "Calles diseñadas para facilitar el tránsito seguro y cómodo de todos los ciudadanos sin distinción de edad y habilidades motoras, dando prioridad a los peatones, ciclistas y usuarios de transporte público; propician convivencia y desplazamientos seguros y accesibles.",
+	"video_foreground": "/assets/images/training/intro_cc.png",
+	"video": {
+		"mp4": "/assets/videos/cc.mp4",
+		"webm": "/assets/videos/cc.webm",
+		"ogv": "/assets/videos/cc.ogv"
+	},
+	"id_video": 1,
+	"guide": "/assets/downloads/Guia-Calles-Completas.pdf",
+	"id_guide": 1,
+	"calculator": "calculadora",
+	"finance": "/financiamiento",
+	"id_finance": 1,
+	"url_test": "/cuestionario/1",
+	"id_test": 1,
+	"class": "color-orange"
+}

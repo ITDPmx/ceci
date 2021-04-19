@@ -1,0 +1,19 @@
+{
+	"id_modality": 5, 
+	"modality": "Distribución Urbana de Mercancías",
+	"description": "Medidas logísticas para promover la distribución de mercancías en nuestras ciudades mediante el desarrollo de centros urbanos de logística, zonas especiales de acceso, carga y descarga, y mecanismos de distribución eficiente en la entrega final.",
+	"video_foreground": "/assets/images/training/intro_dum.png",
+	"video": {
+		"mp4": "/assets/videos/dum.mp4",
+		"webm": "/assets/videos/dum.webm",
+		"ogv": "/assets/videos/dum.ogv"
+	},
+	"id_video": 5,
+	"guide": "dum",
+	"id_guide": 5,
+	"finance": "/financiamiento",
+	"id_finance": 5,
+	"url_test": "/cuestionario/5",
+	"id_test": 5,
+	"class": "color-blue"
+}

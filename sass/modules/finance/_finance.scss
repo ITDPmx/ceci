@@ -1,0 +1,346 @@
+.m-financing {
+	padding: 90px 0 45px;
+	@include respond-to('medium') {
+		padding: 127px 0 63.5px 0
+	}
+}
+
+table.m-financing__table{
+	display: block;
+	thead {
+		display: none;
+		tr {
+			display: block;
+			border: 1px solid #ccc;
+			th { 
+				display: block;
+			  background: $gray-light; 
+			  color: white; 
+			  font-weight: bold; 
+			}
+		}
+	}
+	tbody {
+		display: block;
+		tr {
+			display: block;
+			padding: 10px 0 30px;
+			&:nth-child(odd){
+				background:#f5f5f5;
+			}
+			td {
+				border: none;
+				display: block;
+				padding-left: 45%;
+				padding-top: 5px;
+				position: relative;
+    		padding-bottom: 5px;
+				&:before {
+					left: 6px;
+					padding-right: 10px; 
+					position: absolute;
+					top: 6px;
+					white-space: initial;
+					width: 40%; 
+				}
+				&.m-finance__table-desktop {
+					display: none;
+				}
+				ol {
+					margin: 0px;
+					padding-left:15px;
+				}
+			}
+		}
+	}
+	@include respond-to("medium") {
+		width: 100%;
+		border-collapse: collapse;
+		display: block;
+		thead {
+			display: table-header-group;
+			tr {
+				th {
+					display: table-cell; 
+					color: white; 
+					font-weight: bold;
+					border: 1px solid $gray-strong; 
+					padding: 6px; 
+					text-align: left;
+					&:nth-child(1){
+						width: 20%;
+					}
+					&:nth-child(2){
+						width: 10%
+					}
+					&:nth-child(3){
+						width: 20%;
+					}
+					&:nth-child(4){
+						width: 35%;
+					}
+					&:nth-child(5){
+						width: 15%;
+					}
+					&:nth-child(6){
+						width: 10%;
+					}
+				}
+			}
+		}
+		tbody {
+			display: table-row-group;
+			tr {
+				display: table-row;
+				&:nth-child(odd){
+					background:none;
+				}
+				td {
+					display: table-cell;
+					padding-left:initial;
+					border: 1px solid $gray-strong; 
+					padding: 6px; 
+					text-align: left;
+					&:nth-of-type(1):before {
+						content: "";
+					}
+					&:nth-of-type(2):before {
+						content: "";
+					}
+					&:nth-of-type(3):before {
+						content: "";
+					}
+					&:nth-of-type(4):before {
+						content: "";
+					}
+					&:nth-child(1){
+						width: 20%;
+					}
+					&:nth-child(2){
+						width: 10%
+					}
+					&:nth-child(3){
+						width: 20%;
+					}
+					&:nth-child(4){
+						width: 35%;
+					}
+					&:nth-child(5){
+						width: 15%;
+					}
+					&:nth-child(6){
+						width: 10%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.m-financing__step-one {
+	tbody {
+		tr {
+			td{
+				margin: 10px 0px;
+				&:nth-of-type(1):before {
+					content: "Tipo de ramo";
+					font-weight: bold;
+				}
+				&:nth-of-type(2):before {
+					content: "Ramos";
+					font-weight: bold;
+				}
+				&:nth-of-type(3):before {
+					content: "Programas/Fondos Federales";
+					font-weight: bold;
+				}
+				&:nth-of-type(4):before {
+					content: "Instancia Coordinadora";
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@include respond-to("medium") {
+		table.m-financing__table{
+			thead {
+				th {
+					&:nth-child(1){
+						width: 20%;
+					}
+					&:nth-child(2){
+						width: 10%
+					}
+					&:nth-child(3){
+						width: 60%;
+					}
+					&:nth-child(4){
+						width: 10%;
+					}
+				}
+			}
+		}
+	}
+}
+.m-financing__step-two,
+.m-financing__step-three{
+	table.m-financing__table {
+		tbody {
+			tr {
+				td {
+					margin: 20px 0px;
+					&:nth-of-type(1):before {
+						content: "Fondo/Programa";
+						font-weight: bold;
+					}
+					&:nth-of-type(2):before {
+						content: "Nivel en el que se ejerce";
+						font-weight: bold;
+					}
+					&:nth-of-type(3):before {
+						content: "Monto máximo de subsidio o inversión";
+						font-weight: bold;
+					}
+					&:nth-of-type(4):before {
+						content: "Puede invertir en:";
+						font-weight: bold;
+					}
+					&:nth-of-type(5):before {
+						content: "Modalidades";
+						font-weight: bold;
+					}
+					&:nth-of-type(6):before {
+						content: "Financiamiento de estudios";
+						font-weight: bold;
+					}
+					&.m-finance__table-desktop {
+						display: none;
+					}
+					ol {
+						margin: 0px;
+						padding-left:15px;
+					}
+					&:nth-child(3){
+						margin: 10px 0px 60px;
+					}
+				}
+			}
+		}
+		@include respond-to("medium") {
+			thead {
+				tr {
+					th {
+						&:nth-child(1){
+							width: 20%;
+						}
+						&:nth-child(2){
+							width: 10%
+						}
+						&:nth-child(3){
+							width: 20%;
+						}
+						&:nth-child(4){
+							width: 35%;
+						}
+						&:nth-child(5){
+							width: 15%;
+						}
+						&:nth-child(6){
+							width: 10%;
+						}
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						margin: 40px 0px;
+						&:nth-of-type(1):before {
+							content: "";
+						}
+						&:nth-of-type(2):before {
+							content: "";
+						}
+						&:nth-of-type(3):before {
+							content: "";
+						}
+						&:nth-of-type(4):before {
+							content: "";
+						}
+						&:nth-of-type(5):before {
+							content: "";
+						}
+						&:nth-of-type(6):before {
+							content: "";
+						}
+					}
+				}
+			}
+		}
+	}
+	span {
+		font-size: 14px;
+		color: $gray-strong;
+		font-weight: 600;
+		padding: 5px 10px 30px;
+		display:block;
+		a {
+			word-wrap: break-word;
+			color: $gray-light;
+			font-weight: bold;
+		}
+	}
+}
+
+.branch-4 {
+	background: $pink;
+	padding: 10px;
+	color: $white;
+	@include respond-to("medium") {
+		background: initial;
+		color: initial;
+	}
+}
+.branch-15 {
+	padding: 10px;
+	color: $white;
+	background: $deep-purple;
+	@include respond-to("medium") {
+		background: initial;
+		color: initial;
+	}
+}
+.branch-16 {
+	padding: 10px;
+	background: $blue-indigo;
+	color: $white;
+	@include respond-to("medium") {
+		background: initial;
+		color: initial;color: initial;
+	}
+}
+.branch-23 {
+	padding: 10px;
+	background: $green;
+	color: $white;
+	@include respond-to("medium") {
+		background: initial;
+		color: initial;color: initial;
+	}
+}
+.branch-33 {
+	padding: 10px;
+	background: $orange;
+	color: $white;
+	@include respond-to("medium") {
+		background: initial;
+		color: initial;color: initial;
+	}
+}
+
+.penultimate-link {
+	
+	@include respond-to("small") {
+		padding:5px 10px 5px !important;
+	}
+}

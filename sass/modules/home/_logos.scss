@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/**
+ *  Logos
+ */
+
+.m-logos {
+	padding: 50px 0;
+}
+
+.m-logos__container {
+	line-height: 121px;
+	a {
+		display:block;
+	}
+}
+
+.m-logos__image {
+	// -moz-filter: grayscale(100%);
+	// -ms-filter: grayscale(100%);
+	// -o-filter: grayscale(100%);
+	// -webkit-filter: grayscale(100%);
+	@include transition(all linear 0.25s);
+	// filter: grayscale(100%);
+	vertical-align:middle;
+	width: 150px;
+	cursor:pointer;
+	margin: 0px auto 30px;
+	display: block;
+	width: auto;
+	width: 100%\9;
+	@include respond-to("medium"){
+		margin: 0px auto;
+	}
+}
+
+.m-logos__custom,
+.m-logos__support {
+	margin: 0px 0px 20px 0px;
+	@include respond-to("medium"){
+		margin: 0px 0px 40px 0px;
+	}
+}
+
+.m-logos__support {
+	h2 {
+		font-size: 16px;
+	}
+}
